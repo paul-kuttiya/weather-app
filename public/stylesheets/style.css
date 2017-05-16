@@ -1,0 +1,154 @@
+@import "whitespace-reset-modified.css";
+i.fa.fa-thermometer-full {
+  margin: 0 0 0 10px;
+  font-size: 2em;
+  vertical-align: middle;
+}
+i.fa.fa-thermometer-full:hover {
+  color: #f00;
+  cursor: pointer;
+}
+input[type=text] {
+  background: transparent;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bolder;
+  color: #f00;
+  width: 35%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 3px solid #000;
+}
+input[type=text]:focus {
+  outline: none;
+  border-bottom: 3px solid #f00;
+}
+input[type=text]::placeholder {
+  color: #f0ffff;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+* {
+  box-sizing: border-box;
+}
+h2,
+h3,
+h4 {
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: #f0ffff;
+  font-weight: bolder;
+}
+a:hover {
+  color: #f00;
+}
+body,
+input[type=text] {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background: #f2994a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f2c94c, #f2994a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f2c94c, #f2994a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 16px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+header {
+  padding: 5px;
+}
+header h1 {
+  padding: 0 0 15px 0;
+}
+header i.fa {
+  margin: 0 0 0 15px;
+}
+.container {
+  margin: 2em 0 0 0;
+  box-shadow: 0px 0px 15px 10px rgba(240,255,255,0.35);
+  height: 50vh;
+  display: block;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  color: #f0ffff;
+  position: relative;
+}
+.container .forecast {
+  overflow: auto;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  right: 0;
+  background-color: rgba(17,17,17,0.75);
+  height: 100%;
+  width: 30%;
+}
+.container .forecast .inner {
+  padding: 10px;
+  overflow-x: hidden;
+  display: block;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .forecast .inner > h4:first-child {
+  padding: 10px 0;
+}
+.container .forecast .inner i.fa {
+  margin: 0 5px 0 0;
+}
+.container .forecast .inner .temp {
+  margin: 0 0 -1em 0;
+}
+.container .forecast .inner .temp * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .forecast .inner .temp img {
+  width: 50%;
+  height: auto;
+}
+.container .forecast .inner .temp h1 {
+  font-weight: 100;
+}
+.container .forecast .inner h2 {
+  margin: 0 0 0.5em 0;
+}
+.container .forecast .inner footer {
+  position: absolute;
+  left: 0;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.container .forecast .inner footer > a:first-child {
+  float: left;
+}
+.container .forecast .inner footer > a:last-child {
+  float: right;
+}
+.container .forecast .inner footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}

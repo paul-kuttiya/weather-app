@@ -1,0 +1,94 @@
+@import "mixins"
+@import "whitespace-reset-modified.css"
+@import "search_box"
+
+*
+  box-sizing: border-box
+h2,h3,h4
+  font-weight: 100
+a
+  text-decoration: none
+  color: colors.white
+  font-weight: bolder
+  &:hover
+    color: red
+body, input[type=text]
+  font-family: 'Open Sans', sans-serif;
+body
+  background: #F2994A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size 16px
+  width 60%
+  margin 0 auto
+  padding 1em
+  text-align center
+h1
+  font-size 2em
+h2
+  font-size 1.5em
+header
+  padding 5px
+  h1
+    padding 0 0 15px 0
+  i.fa
+    margin 0 0 0 15px
+.container
+  margin 2em 0 0 0
+  box-shadow: 0px 0px 15px 10px rgba(240, 255, 255, 0.35)
+  height 50vh
+  display block
+  border-radius 5px
+  background-repeat no-repeat
+  background-position center center
+  background-size 100% 100%
+  color: colors.white
+  position relative
+  .forecast
+    overflow auto
+    border-top-right-radius 5px
+    border-bottom-right-radius 5px
+    position absolute
+    right 0
+    background-color rgba(17, 17, 17, 0.75)
+    height 100%
+    width 30%
+    .inner
+      padding 10px
+      overflow-x: hidden
+      display block
+      position: relative
+      height 100%
+      margin 0 auto
+      text-align center
+      > h4:first-child
+        padding 10px 0
+      i.fa
+        margin 0 5px 0 0
+      .temp
+        margin: 0 0 -1em 0
+        *
+          display: inline-block
+          vertical-align: middle
+        img
+          width: 50%
+          height auto
+        h1
+          font-weight: 100
+      h2
+        margin 0 0 0.5em 0
+      footer
+        position: absolute
+        left: 0
+        padding 5px 10px;
+        text-align: center
+        margin 0 auto
+        width: 100%
+        > a:first-child
+          float: left
+        > a:last-child
+          float: right
+        &:after 
+          content: ""
+          display: table
+          clear: both

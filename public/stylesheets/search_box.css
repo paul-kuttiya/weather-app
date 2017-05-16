@@ -1,0 +1,34 @@
+i.fa.fa-thermometer-full {
+  margin: 0 0 0 10px;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+i.fa.fa-thermometer-full:hover {
+  color: #f00;
+  cursor: pointer;
+}
+input[type=text] {
+  background: transparent;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bolder;
+  color: #f00;
+  width: 35%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+input[type=text]:focus {
+  outline: none;
+  border-bottom: 2px solid #f00;
+}
+input[type=text]::placeholder {
+  color: #ccc;
+  text-align: center;
+  text-transform: uppercase;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
